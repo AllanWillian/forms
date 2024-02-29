@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="js/formatacao_input.js"></script>
+    <script src="js/conexao_forms.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <div class="container_inputs">
+            <div class="inputs_conteudo">
+                <img src="/assets/logo_socor.png" class="img_logo">
+                <h1>Em que podemos te ajudar?</h1>
+                <input type="text" placeholder="Nome Completo:" id="nome" required="required">
+                <input type="tel" placeholder="Telefone:" id="telefone" required="required" maxlength="15">
+                <input type="text" placeholder="Apartamento:" id="local" required="required">
+                <div class="seletor">
+                    <select id="setor" data-link-whatsapp="https://api.whatsapp.com/send?phone=31975084436">
+                        <option value="select">Selecione o setor</option>
+                        <option class="lista_opcoes" value="manutencao"> Manutenção
+                        </option>
+                        <option class="lista_opcoes" value="ouvidoria" >Ouvidoria
+                        </option>
+                        <option value="hotelaria" >Hotelaria</option>
+                    </select>
+                </div>
+                <textarea id="mensagem" rows="4" cols="50" placeholder="Digite seu texto aqui..." class="input_mensagem"
+                    required="required"></textarea>
+                <div id="botoes">
+                    <button class="button_enviar" id="enviar" type="submit"> Enviar</button>
+                    <a href="/"><button class="button_enviar" id="enviar"> Voltar</button></a>
+                </div>
+            </div>
+        </div>
+       
+        
+    </section>
+</body>
+
+</html>
